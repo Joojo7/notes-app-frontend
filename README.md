@@ -1,8 +1,3 @@
-Here’s a simple and clear `README.md` for your sample application, tailored for users deploying it as a dummy frontend on **Akamai Linode**:
-
----
-
-
 # 📝 Node Next Sample App
 
 This is a simple sample frontend application built with **Next.js 15**, **React 19**, and **TailwindCSS 4**.
