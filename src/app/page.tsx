@@ -7,7 +7,7 @@ interface Note {
   content: string;
 }
 
-const apiUrl = "http://localhost:8000";
+const apiUrl = `${process.env.NEXT_PUBLIC_API_BASE_URL}/api`;
 
 const NotesApp = () => {
   const [notes, setNotes] = useState<Note[]>([]);
