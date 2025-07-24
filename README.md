@@ -30,7 +30,7 @@ Make sure you have the following installed on your server:
 ## 🛠️ Setup Instructions
 
 1. **Clone the Repository**
-   ```
+  ```
    git clone https://github.com/your-username/node-next-sample.git
    cd node-next-sample
   ```
