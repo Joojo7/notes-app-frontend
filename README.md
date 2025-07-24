@@ -1,37 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Here’s a simple and clear `README.md` for your sample application, tailored for users deploying it as a dummy frontend on **Akamai Linode**:
 
-## Getting Started
+---
 
-First, run the development server:
+````markdown
+# 📝 Node Next Sample App
 
-```bash
-npm run dev
-# or this
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This is a simple sample frontend application built with **Next.js 15**, **React 19**, and **TailwindCSS 4**.
+It’s designed for quick deployment to **Akamai Linode** as a dummy frontend, useful for testing cloud setups, subdomain routing, and reverse proxy configurations.
+
+---
+
+## 🚀 Features
+
+- Next.js 15 with Turbopack support
+- React 19
+- TailwindCSS 4
+- Simple JWT-based login and note-taking interface
+- Suitable for reverse proxy via Apache/Nginx
+
+---
+
+## 📦 Prerequisites
+
+Make sure you have the following installed on your server:
+
+- **Node.js** (v18+ recommended)
+- **npm** or **yarn**
+- **Git** (for cloning)
+- A **Linode instance** (Debian/Ubuntu preferred)
+- Optional: Apache or Nginx if using reverse proxy setups
+
+---
+
+## 🛠️ Setup Instructions
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/node-next-sample.git
+   cd node-next-sample
+````
+
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the Development Server**
+
+   ```bash
+   npm run dev
+   ```
+
+   > Visit: `http://localhost:3000`
+
+4. **Build and Start for Production**
+
+   ```bash
+   npm run build
+   npm start
+   ```
+
+   > App will run on `http://localhost:3000` by default.
+
+---
+
+## 🧱 Reverse Proxy (Optional)
+
+If you're routing through Apache/Nginx, configure the reverse proxy to forward requests to port `3000`.
+Example Apache snippet:
+
+```apache
+ProxyPass / http://localhost:3000/
+ProxyPassReverse / http://localhost:3000/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Deployment on Akamai Linode
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This app can be deployed on a Linode VPS as a containerized service or as a raw Node.js process. You can:
 
-## Learn More
+* Use **PM2** to keep it running
+* Expose it behind a reverse proxy
+* Bind it to your subdomain (e.g. `https://app.yourdomain.com`)
 
-To learn more about Next.js, take a look at the following resources:
+For full instructions, refer to your article’s deployment section.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```
+├── src/
+├── public/
+├── package.json
+├── tailwind.config.js
+└── README.md
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# node-next-sample
+## 📋 License
+
+MIT — Feel free to use or extend as needed.
