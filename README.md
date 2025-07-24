@@ -2,7 +2,7 @@ Here’s a simple and clear `README.md` for your sample application, tailored fo
 
 ---
 
-````markdown
+
 # 📝 Node Next Sample App
 
 This is a simple sample frontend application built with **Next.js 15**, **React 19**, and **TailwindCSS 4**.
@@ -38,7 +38,7 @@ Make sure you have the following installed on your server:
    ```bash
    git clone https://github.com/your-username/node-next-sample.git
    cd node-next-sample
-````
+  ```
 
 2. **Install Dependencies**
 
