@@ -30,20 +30,20 @@ Make sure you have the following installed on your server:
 ## 🛠️ Setup Instructions
 
 1. **Clone the Repository**
-   ```bash
+   ```
    git clone https://github.com/your-username/node-next-sample.git
    cd node-next-sample
   ```
 
 2. **Install Dependencies**
 
-   ```bash
+   ```
    npm install
    ```
 
 3. **Start the Development Server**
 
-   ```bash
+   ```
    npm run dev
    ```
 
@@ -51,7 +51,7 @@ Make sure you have the following installed on your server:
 
 4. **Build and Start for Production**
 
-   ```bash
+   ```
    npm run build
    npm start
    ```
@@ -65,7 +65,7 @@ Make sure you have the following installed on your server:
 If you're routing through Apache/Nginx, configure the reverse proxy to forward requests to port `3000`.
 Example Apache snippet:
 
-```apache
+```
 ProxyPass / http://localhost:3000/
 ProxyPassReverse / http://localhost:3000/
 ```
