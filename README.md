@@ -37,24 +37,24 @@ Make sure you have the following installed on your server:
 
 2. **Install Dependencies**
 
-   ```
+  ```
    npm install
-   ```
+  ```
 
 3. **Start the Development Server**
 
-   ```
+  ```
    npm run dev
-   ```
+  ```
 
    > Visit: `http://localhost:3000`
 
 4. **Build and Start for Production**
 
-   ```
+  ```
    npm run build
    npm start
-   ```
+  ```
 
    > App will run on `http://localhost:3000` by default.
 
